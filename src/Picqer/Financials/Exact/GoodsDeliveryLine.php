@@ -1,32 +1,31 @@
 <?php namespace Picqer\Financials\Exact;
 
-class SalesOrderLine extends Model
+class GoodsDeliveryLine extends Model
 {
 
     use Query\Findable;
     use Persistance\Storable;
 
     protected $fillable = [
-        'AmountDC',
-        'AmountFC',
+        'DeliveryDate',
         'Description',
         'Division',
         'ID',
-        'OrderID',
+        'EntryID',
         'Item',
-        'ShopOrder',
+        'ItemCode',
         'ItemDescription',
-        'DeliveryDate',
-        'Quantity',
+        'SalesOrderLineID',
+        'Unitcode',
         'QuantityDelivered',
-        'QuantityInvoiced',
-        'VATCode',
-        'VATPercentage',
+        'QuantityOrdered',
         'Notes',
         'LineNumber',
+        'TrackingNumber',
+        'SerialNumbers',
 
     ];
 
-    protected $url = 'salesorder/SalesOrderLines';
+    protected $url = 'salesorder/GoodsDeliveryLines';
 
 }
