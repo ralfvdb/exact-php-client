@@ -11,12 +11,10 @@ class GoodsDelivery extends Model
     protected $goodDeliveryLines = [ ];
 
     protected $fillable = [
-        'Division',
+        'EntryID',
         'Created',
-        'Document',
-        'TrackingNumber',
-        'Description',
-        'Remarks',
+        'Creator',
+        'CreatorFullName',
         'DeliveryAccount',
         'DeliveryAccountCode',
         'DeliveryAccountName',
@@ -25,10 +23,23 @@ class GoodsDelivery extends Model
         'DeliveryContactPersonFullName',
         'DeliveryDate',
         'DeliveryNumber',
+        'Description',
+        'Division',
+        'Document',
+        'DocumentSubject',
+        'EntryNumber',
+        'GoodsDeliveryLines',
+        'Modified',
+        'Modifier',
+        'ModifierFullName',
+        'Remarks',
         'ShippingMethod',
         'ShippingMethodCode',
         'ShippingMethodDescription',
-        'GoodsDeliveryLines'
+        'TrackingNumber',
+        'Warehouse',
+        'WarehouseCode',
+        'WarehouseDescription'
     ];
 
 
