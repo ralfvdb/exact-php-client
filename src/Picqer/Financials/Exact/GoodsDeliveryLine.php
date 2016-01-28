@@ -7,23 +7,32 @@ class GoodsDeliveryLine extends Model
     use Persistance\Storable;
 
     protected $fillable = [
+        'ID',
+        'BatchNumbers',
+        'Created',
+        'Creator',
+        'CreatorFullName',
         'DeliveryDate',
         'Description',
         'Division',
-        'ID',
         'EntryID',
         'Item',
         'ItemCode',
         'ItemDescription',
-        'SalesOrderLineID',
-        'Unitcode',
+        'LineNumber',
+        'Modified',
+        'Modifier',
+        'ModifierFullName',
+        'Notes',
         'QuantityDelivered',
         'QuantityOrdered',
-        'Notes',
-        'LineNumber',
-        'TrackingNumber',
+        'SalesOrderLineID',
+        'SalesOrderLineNumber',
+        'SalesOrderNumber',
         'SerialNumbers',
-
+        'StorageLocation',
+        'TrackingNumber',
+        'Unitcode'
     ];
 
     protected $url = 'salesorder/GoodsDeliveryLines';
