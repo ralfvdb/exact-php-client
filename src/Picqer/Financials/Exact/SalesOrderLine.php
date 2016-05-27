@@ -14,6 +14,7 @@ class SalesOrderLine extends Model
         'ID',
         'OrderID',
         'Item',
+        'ItemCode',
         'ShopOrder',
         'ItemDescription',
         'DeliveryDate',
@@ -22,8 +23,11 @@ class SalesOrderLine extends Model
         'QuantityInvoiced',
         'VATCode',
         'VATPercentage',
+        'VATAmount',
         'Notes',
         'LineNumber',
+        'NetPrice',
+        'UnitPrice'
 
     ];
 

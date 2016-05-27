@@ -27,6 +27,7 @@ class SalesOrder extends Model
         'DeliverToContactPerson',
         'DeliverToContactPersonFullName',
         'DeliverToName',
+        'DeliveryAddress',
         'DeliveryDate',
         'DeliveryStatus',
         'DeliveryStatusDescription',

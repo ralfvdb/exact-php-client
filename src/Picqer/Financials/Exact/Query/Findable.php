@@ -23,6 +23,16 @@ trait Findable
         return new self($this->connection(), $result);
     }
 
+    public function findWithSelectAndExpand($id, $select = '', $expand = '')
+    {
+        $result = $this->connection()->get($this->url, [
+            '$filter' => $this->primaryKey . " eq guid'$id'",
+            '$select' => $select,
+            '$expand' => $expand
+        ]);
+
+        return new self($this->connection(), $result);
+    }
 
     public function filter($filter, $expand = '', $select = '', $system_query_options = null)
     {
